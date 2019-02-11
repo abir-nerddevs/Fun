@@ -6,8 +6,8 @@ answers = []
 
 for each_operator_combination in operator_combinations:
   if(each_operator_combination[0] != "+"):
-    expression_tuples = zip(each_operator_combination, inp_string)
-    expression = "".join("".join(each_tuple) for each_tuple in expression_tuples)
+    expression_tuples = zip(each_operator_combination, inp_string) #Generates expression tuples combining operators and digits
+    expression = "".join("".join(each_tuple) for each_tuple in expression_tuples) #converts the tuples to string => [(-,1),(+,2)] => '-1+2'
     if(eval(expression) == 100):
       answers.append(expression)
 
