@@ -1,7 +1,7 @@
 import itertools
 
 inp_string = "123456789"
-operator_combinations = itertools.product(["+","-",""], repeat=9)
+operator_combinations = itertools.product(["+","-",""], repeat=9) #Generates Cartesian product of nine ["+","-",""] amounting 3^9 nunmber of combinations
 answers = []
 
 for each_operator_combination in operator_combinations:
